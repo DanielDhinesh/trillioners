@@ -66,7 +66,7 @@ header .navigation.active .navigation-items{
 }
 .container .card .content{
     position: relative;
-    width: 50%;
+    width: 100%;
     margin-left: 0px;
     bottom: 19%;
     padding: 0;
