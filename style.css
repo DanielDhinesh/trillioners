@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+ 
+header{
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 120px;
+    transition: 0.5s ease;
+}
+
+header .brand{
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+header .navigation{
+    position: relative;
+}
+header .navigation .navigation-items a{
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    padding-bottom: 3px;
+    transition: 0.3s ease;
+}
+header .navigation .navigation-items a:before{
+    content: '';
+    position: absolute;
+    background: rgb(255, 255, 255);
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+header .navigation .navigation-items a:hover:before{
+    width: 100%;
+}
+/*--main content--*/
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .card{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    transition: 0.5s;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(45deg,#1a2f3f,#495d7e);
+}
+.container .card img{
+    position: absolute;
+    bottom: 0;
+    left: 80%;
+    transform: translateX(-50%);
+    height: 550px;
+    transition: 0.5s;
+}
+.container .card .content{
+    position: relative;
+    width: 50%;
+    margin-left: 30px;
+    padding: 20px 20px 20px 40px;
+}
+.container .card .content h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    line-height: 1em;
+    margin-left: 60px;
+}
+.container .card .content p{
+    color: #fff;
+    margin-left: 60px;
+}
+.container .card .content a{
+    margin-left: 60px;
+    position: relative;
+    color: #111;
+    background: #fff;
+    display: inline-block;
+    padding: 5px 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight:700 ;
+}
+.container .card .content a:hover{
+    border-radius: 7px;
+    background: black;
+    color: rgb(255, 251, 251);
+    
+}
